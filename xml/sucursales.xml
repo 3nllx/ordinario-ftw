@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sucursales>
+    <sucursal>
+        <nombre>Sucursal Centro</nombre>
+        <direccion>Av. Principal #120, Centro</direccion>
+        <horario>Lunes a sábado de 8:00 a 20:00</horario>
+    </sucursal>
+
+    <sucursal>
+        <nombre>Sucursal Museo</nombre>
+        <direccion>Calle del Café #45</direccion>
+        <horario>Martes a domingo de 9:00 a 18:00</horario>
+    </sucursal>
+
+    <sucursal>
+        <nombre>Sucursal Plaza</nombre>
+        <direccion>Plaza Comercial Local 8</direccion>
+        <horario>Lunes a domingo de 10:00 a 21:00</horario>
+    </sucursal>
+</sucursales>

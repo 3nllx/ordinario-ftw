@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<productos>
+    <producto>
+        <nombre>Cosecha Especial 2025</nombre>
+        <precio>$230</precio>
+        <descripcion>Café conmemorativo con acidez luminosa y notas cítricas.</descripcion>
+        <imagen>img/producto1.png</imagen>
+    </producto>
+
+    <producto>
+        <nombre>Mezcla Ganadora</nombre>
+        <precio>$230</precio>
+        <descripcion>Granos 100% arábica con cuerpo, intensidad y notas dulces.</descripcion>
+        <imagen>img/producto2.png</imagen>
+    </producto>
+
+    <producto>
+        <nombre>Gourmet</nombre>
+        <precio>$97</precio>
+        <descripcion>Café seleccionado de altura con aroma intenso y equilibrado.</descripcion>
+        <imagen>img/producto3.png</imagen>
+    </producto>
+</productos>
