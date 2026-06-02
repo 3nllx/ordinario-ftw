@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sucursales</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">BOLA DE PLATA</div>
+
+    <nav>
+        <a href="cafeteria.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="museo.html">Museo</a>
+        <a href="lineas.html">Líneas</a>
+        <a href="sucursales.html">Sucursales</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+</header>
+
+<section class="seccion">
+    <h1>Sucursales</h1>
+
+    <button onclick="cargarSucursales()">Mostrar sucursales</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Dirección</th>
+                <th>Horario</th>
+            </tr>
+        </thead>
+
+        <tbody id="tablaSucursales"></tbody>
+    </table>
+</section>
+
+<footer>
+    <p>Bola de plata - Calidad Xalapa</p>
+</footer>
+
+<script src="javascript/funcionamiento.js"></script>
+</body>
+</html>
