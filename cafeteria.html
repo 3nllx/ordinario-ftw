@@ -2,43 +2,199 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Bola de plata</title>
+    <title>Bola de Plata</title>
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
 
-<header>
-    <div class="logo">BOLA DE PLATA</div>
+<header class="encabezado-superior">
+    <div class="menu-icono">
+        <img src="img/iconoMenu.png" alt="Menú">
+    </div>
 
-    <nav>
-        <a href="cafeteria.html">Inicio</a>
-        <a href="productos.html">Productos</a>
-        <a href="museo.html">Museo</a>
-        <a href="lineas.html">Líneas</a>
-        <a href="sucursales.html">Sucursales</a>
-        <a href="contacto.html">Contacto</a>
-    </nav>
+    <div class="logo-centro">
+        <img src="img/logo.png" alt="Bola de Plata">
+    </div>
+
+    <div class="iconos">
+        <img src="img/iconoFace.png" alt="Facebook">
+        <img src="img/iconoInsta.png" alt="Instagram">
+        <img src="img/iconoUsuario.png" alt="Usuario">
+        <img src="img/iconoCarrito.png" alt="Carrito">
+    </div>
 </header>
 
-<section class="inicio">
-    <h1>De nuestra finca a tu taza</h1>
+<nav class="menu-principal">
+    <a href="cafeteria.html" class="activo">Inicio</a>
+    <a href="museo.html">Nosotros</a>
+    <a href="productos.html">Tienda</a>
+    <a href="sucursales.html">Cafeterías</a>
+    <a href="lineas.html">Menú</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="museo.html" class="boton-menu">Museo</a>
+</nav>
 
-    <div class="opciones">
-        <a href="productos.html" class="caja"> Productos estrella</a>
-        <a href="museo.html" class="caja"> Museo</a>
-        <a href="lineas.html" class="caja"> Líneas Bola de plata</a>
+<section class="hero animar">
+    <div class="capa-oscura"></div>
+
+    <div class="contenido-hero">
+        <h2>De nuestra finca a tu taza<sup>®</sup></h2>
+    </div>
+
+    <div class="opciones-hero">
+        <a href="productos.html" class="tarjeta-hero">
+            <span>☆</span>
+            <div>
+                <h3>PRODUCTOS ESTRELLA</h3>
+                <p>Ver productos estrella</p>
+            </div>
+        </a>
+
+        <a href="museo.html" class="tarjeta-hero">
+            <span>☕</span>
+            <div>
+                <h3>MUSEO</h3>
+                <p>Experiencia</p>
+            </div>
+        </a>
+
+        <a href="lineas.html" class="tarjeta-hero">
+            <span>◖</span>
+            <div>
+                <h3>LÍNEAS BOLA DE PLATA</h3>
+                <p>Conoce más...</p>
+            </div>
+        </a>
     </div>
 </section>
 
-<section class="aniversario">
-    <h2>Edición Aniversario</h2>
-    <p>Miel, vainilla, chocolate amargo, manzana verde y cítricos.</p>
-    <a href="productos.html" class="boton">Ver productos</a>
+<section class="aniversario animar">
+    <div class="sello">50</div>
+
+    <div class="logo-aniversario">
+        <h2>BOLA DE PLATA</h2>
+        <p>calidad xalapa</p>
+        <h3>50</h3>
+    </div>
+
+    <div class="cuadro-aniversario">
+        <h4>19 <span>EDICIÓN</span> 75</h4>
+        <h1>ANIVERSARIO</h1>
+        <hr>
+        <h5>MIEL, VAINILLA, CHOCOLATE AMARGO,<br> MANZANA VERDE Y CÍTRICOS</h5>
+        <hr>
+        <p>
+            En tributo a la tierra y a las personas involucradas en brindar
+            lo mejor de nuestra finca a tu taza, presentamos nuestra mezcla
+            edición especial 50 aniversario.
+        </p>
+
+        <div class="botones-aniversario">
+            <a href="productos.html">Comprar ahora</a>
+            <a href="productos.html">Más información</a>
+        </div>
+    </div>
+
+    <div class="bolsa-cafe">
+        <img src="img/producto1.png" alt="Producto aniversario">
+    </div>
 </section>
 
-<footer>
-    <p>Bola de plata - Calidad Xalapa</p>
+<section class="productos-inicio animar">
+    <h2>NUESTROS</h2>
+    <h1>PRODUCTOS ESTRELLA</h1>
+    <a href="productos.html" class="boton-tienda">Ir a tienda</a>
+
+    <div class="contenedor-productos">
+        <div class="producto-inicio">
+            <img src="img/producto1.png" alt="Cosecha Especial">
+            <div class="carrito">🛒</div>
+            <p class="precio">Desde: $230</p>
+            <h3>Cosecha Especial 2025</h3>
+            <p>Café conmemorativo por los 50 años, con acidez luminosa y cuerpo cremoso.</p>
+            <a href="productos.html">Ver más →</a>
+        </div>
+
+        <div class="producto-inicio grande">
+            <img src="img/producto2.png" alt="Mezcla Ganadora">
+            <div class="carrito">🛒</div>
+            <p class="precio">Desde: $230</p>
+            <h3>Mezcla Ganadora</h3>
+            <p>Elaborada con granos 100% arábica de estricta altura, intensidad y notas dulces.</p>
+            <a href="productos.html">Ver más →</a>
+        </div>
+
+        <div class="producto-inicio">
+            <img src="img/producto3.png" alt="Gourmet">
+            <div class="carrito">🛒</div>
+            <p class="precio">Desde: $97</p>
+            <h3>Gourmet</h3>
+            <p>La mezcla de la casa, con perfil aromático intenso y equilibrado.</p>
+            <a href="productos.html">Ver más →</a>
+        </div>
+    </div>
+</section>
+
+<section class="lineas-inicio animar">
+    <h2>LÍNEAS</h2>
+    <h1>BOLA DE PLATA</h1>
+
+    <div class="contenedor-lineas">
+        <div class="linea">
+            <img src="img/producto2.png" alt="Creaciones">
+            <h3>CREACIONES</h3>
+            <p>Mezclas únicas para quienes buscan experiencias nuevas en cada taza.</p>
+            <a href="lineas.html">Ver más</a>
+        </div>
+
+        <div class="linea">
+            <img src="img/producto3.png" alt="Corazón de oro">
+            <h3>CORAZÓN DE PLATA</h3>
+            <p>Cafés excepcionales, de origen único y edición limitada.</p>
+            <a href="lineas.html">Ver más</a>
+        </div>
+    </div>
+</section>
+
+<footer class="footer-principal">
+    <div class="tela"></div>
+
+    <div class="footer-contenido">
+        <div>
+            <h2>BOLA DE PLATA</h2>
+            <p>calidad xalapa</p>
+            <p>📍 Av. Manuel Ávila Camacho 120 Col. Centro Xalapa, Ver.</p>
+        </div>
+
+        <div>
+            <h3>Síguenos en:</h3>
+            <p>f &nbsp;&nbsp; ◎</p>
+            <p>☎ (228) 817 45 33</p>
+            <p>✉ contacto@boladeplata.com.mx</p>
+            <p>Museo Bola de Plata</p>
+        </div>
+
+        <div>
+            <p>› Inicio</p>
+            <p>› Nosotros</p>
+            <p>› Tienda</p>
+            <p>› Cafeterías</p>
+        </div>
+
+        <div>
+            <p>› Iniciar Sesión / Registrarse</p>
+            <p>› Aviso de privacidad</p>
+            <p>› Contacto</p>
+        </div>
+    </div>
+
+    <div class="derechos">
+        <p>© 2025 - Todos los Derechos Reservados por BOLA DE PLATA</p>
+    </div>
 </footer>
 
+<a href="#" class="subir">↑</a>
+
+<script src="javascript/funcionamiento.js"></script>
 </body>
 </html>

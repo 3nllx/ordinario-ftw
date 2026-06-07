@@ -5,91 +5,530 @@ body {
     color: #4b2b18;
 }
 
-header {
-    background: #3b2114;
-    color: white;
+.encabezado-superior {
+    background: white;
+    height: 105px;
     display: flex;
-    justify-content: space-between;
-    padding: 20px 40px;
+    justify-content: space-around;
     align-items: center;
 }
 
-.logo {
-    font-size: 28px;
-    font-weight: bold;
-    color: #c99b45;
+.menu-icono {
+    justify-self: start;
+    margin-left: 220px;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
+.menu-icono img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
 }
 
-nav a:hover {
-    color: #d2691e;
+.logo-centro img {
+    width: 260px;
+    height: auto;
 }
 
-.inicio {
-    background: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)), url("../img/fondo.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 520px;
-    text-align: center;
-    padding-top: 80px;
+.logo-centro h1 {
+    margin: 0;
+    color: #4b2b18;
+    font-size: 34px;
+    letter-spacing: 2px;
 }
 
-.inicio h1 {
+.logo-centro p {
+    margin: 0;
     color: #e87522;
-    font-size: 55px;
+    font-size: 12px;
 }
 
-.opciones {
+.iconos img {
+    width: 24px;
+    height: 24px;
+    margin: 10px;
+    object-fit: contain;
+}
+
+.menu-principal {
+    background: rgba(0,0,0,.85);
+    height: 75px;
     display: flex;
     justify-content: center;
-    gap: 40px;
-    margin-top: 120px;
+    align-items: center;
+    gap: 35px;
 }
 
-.caja {
-    background: white;
-    color: #6b3b1f;
-    padding: 25px 50px;
-    border-radius: 15px;
+.menu-principal a {
+    color: white;
     text-decoration: none;
+    font-size: 18px;
+    transition: .3s;
+}
+
+.menu-principal a:hover,
+.menu-principal .activo {
+    color: #f47b20;
+}
+
+.boton-menu {
+    background: #f47b20;
+    color: white !important;
+    padding: 18px 32px;
+    border-radius: 14px;
     font-weight: bold;
-    box-shadow: 0 0 10px #333;
+}
+
+.hero {
+    height: 720px;
+    background: url("../img/fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.capa-oscura {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.55);
+}
+
+.contenido-hero {
+    position: relative;
+    z-index: 2;
+    padding-top: 230px;
+    padding-left: 150px;
+}
+
+.contenido-hero h2 {
+    color: #f47b20;
+    font-size: 55px;
+    margin: 0;
+}
+
+.contenido-hero sup {
+    font-size: 30px;
+}
+
+.opciones-hero {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 140px;
+}
+
+.tarjeta-hero {
+    background: white;
+    width: 290px;
+    padding: 20px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    text-decoration: none;
+    box-shadow: 0 8px 18px rgba(0,0,0,.25);
+    transition: .4s;
+}
+
+.tarjeta-hero:hover {
+    transform: translateY(-12px);
+    background: #f7efe5;
+}
+
+.tarjeta-hero span {
+    color: #d8a449;
+    font-size: 35px;
+}
+
+.tarjeta-hero h3 {
+    margin: 0;
+    color: #8b3f17;
+    font-size: 17px;
+}
+
+.tarjeta-hero p {
+    margin: 5px 0 0;
+    color: gray;
 }
 
 .aniversario {
     background: #f5efe5;
-    margin-top: -50px;
+    min-height: 650px;
     border-radius: 60px 60px 0 0;
+    margin-top: -40px;
+    padding: 90px 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    overflow: visible;
+}
+
+.aniversario:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:
+        radial-gradient(circle at 20% 80%, rgba(139,63,23,.12), transparent 25%),
+        radial-gradient(circle at 80% 50%, rgba(139,63,23,.10), transparent 20%);
+    opacity: .8;
+}
+
+.sello {
+    position: absolute;
+    top: -115px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #eadfcb;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    color: #c49a44;
+    font-size: 70px;
+    font-weight: bold;
     text-align: center;
-    padding: 80px;
+    line-height: 180px;
+    z-index: 10;
 }
 
-.aniversario h2 {
+.logo-aniversario,
+.cuadro-aniversario,
+.bolsa-cafe {
+    position: relative;
+    z-index: 2;
+}
+
+.logo-aniversario {
+    text-align: center;
+    color: #c49a44;
+}
+
+.logo-aniversario h2 {
     font-size: 45px;
-    color: #6b3b1f;
+    margin: 0;
 }
 
-.boton, button {
-    background: #8b3f17;
+.logo-aniversario h3 {
+    font-size: 90px;
+    margin: 20px 0;
+    border: 6px solid #c49a44;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    display: inline-block;
+}
+
+.cuadro-aniversario {
+    background: rgba(255,255,255,.85);
+    width: 520px;
+    text-align: center;
+    padding: 35px;
+}
+
+.cuadro-aniversario h4 {
+    font-size: 26px;
+    margin: 0;
+    color: #7b4a24;
+}
+
+.cuadro-aniversario h4 span {
+    font-size: 48px;
+    letter-spacing: 8px;
+}
+
+.cuadro-aniversario h1 {
+    font-size: 58px;
+    margin: 10px 0;
+    color: #7b4a24;
+    text-shadow: 2px 2px white;
+}
+
+.cuadro-aniversario h5 {
+    color: #7b4a24;
+    font-size: 19px;
+    letter-spacing: 3px;
+    line-height: 1.5;
+}
+
+.cuadro-aniversario p {
+    font-weight: bold;
+    color: #7b4a24;
+    line-height: 1.5;
+}
+
+.cuadro-aniversario hr {
+    border: none;
+    height: 3px;
+    background: #7b4a24;
+}
+
+.botones-aniversario {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 30px;
+}
+
+.botones-aniversario a,
+.boton,
+button {
+    background: #63351f;
     color: white;
-    padding: 12px 35px;
+    padding: 15px 35px;
     border-radius: 12px;
     text-decoration: none;
     border: none;
     cursor: pointer;
+    font-weight: bold;
+    transition: .4s;
 }
 
-button:hover, .boton:hover {
-    background: #5a260e;
+.botones-aniversario a:hover,
+.boton:hover,
+button:hover {
+    background: #f47b20;
+    transform: translateY(-4px);
 }
+
+.bolsa-cafe img {
+    width: 270px;
+    animation: flotar 3s ease-in-out infinite;
+}
+
+.productos-inicio {
+    background: #e9dfcf;
+    padding: 110px 40px 90px;
+    text-align: center;
+}
+
+.productos-inicio h2 {
+    font-size: 48px;
+    letter-spacing: 10px;
+    font-weight: normal;
+    margin: 0;
+    color: #2d211c;
+}
+
+.productos-inicio h1 {
+    color: #f47b20;
+    font-size: 55px;
+    margin: 15px 0;
+    letter-spacing: 3px;
+}
+
+.boton-tienda {
+    background: #8b3f17;
+    color: white;
+    padding: 15px 45px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 80px;
+}
+
+.contenedor-productos {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    flex-wrap: wrap;
+}
+
+.producto-inicio {
+    background: white;
+    width: 310px;
+    min-height: 360px;
+    padding: 170px 35px 35px;
+    border-radius: 30px;
+    box-shadow: 0 10px 25px rgba(74,42,22,.15);
+    position: relative;
+    transition: .4s;
+}
+
+.producto-inicio.grande {
+    transform: translateY(-60px);
+}
+
+.producto-inicio:hover {
+    transform: translateY(-18px);
+}
+
+.producto-inicio.grande:hover {
+    transform: translateY(-78px);
+}
+
+.producto-inicio img {
+    width: 230px;
+    height: 230px;
+    object-fit: contain;
+    position: absolute;
+    top: -95px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.producto-inicio .carrito {
+    position: absolute;
+    top: 80px;
+    right: 25px;
+    font-size: 32px;
+}
+
+.precio {
+    font-weight: bold;
+    color: #7b4a24;
+    font-size: 20px;
+}
+
+.producto-inicio h3 {
+    color: #2d211c;
+    font-size: 25px;
+}
+
+.producto-inicio p {
+    color: #4b2b18;
+    font-style: italic;
+}
+
+.producto-inicio a {
+    color: #f47b20;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.lineas-inicio {
+    background: white;
+    padding: 120px 40px;
+    text-align: center;
+}
+
+.lineas-inicio h2 {
+    font-size: 42px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.lineas-inicio h1 {
+    color: #f47b20;
+    font-size: 42px;
+    margin: 15px 0 60px;
+}
+
+.contenedor-lineas {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    flex-wrap: wrap;
+}
+
+.linea {
+    background: #f47b20;
+    width: 300px;
+    padding: 30px;
+    border-radius: 25px;
+    color: white;
+    position: relative;
+    transition: .4s;
+}
+
+.linea:hover {
+    transform: translateY(-15px);
+}
+
+.linea img {
+    width: 260px;
+    height: 220px;
+    object-fit: contain;
+    background: rgba(255,255,255,.75);
+    border-radius: 20px;
+    margin-top: -90px;
+}
+
+.linea h3 {
+    font-size: 24px;
+}
+
+.linea p {
+    font-style: italic;
+}
+
+.linea a {
+    background: #8b3f17;
+    color: white;
+    display: inline-block;
+    padding: 15px 55px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: -60px;
+}
+
+.footer-principal {
+    background: white;
+    color: #4b2b18;
+}
+
+.tela {
+    height: 110px;
+    background: linear-gradient(45deg, #c79552, #e1b16d, #b47b3f);
+}
+
+.footer-contenido {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    padding: 55px 80px;
+    flex-wrap: wrap;
+}
+
+.footer-contenido h2 {
+    font-size: 42px;
+    margin: 0;
+    color: #4b2b18;
+}
+
+.footer-contenido h3 {
+    color: #f47b20;
+}
+
+.footer-contenido p {
+    font-size: 18px;
+}
+
+.derechos {
+    background: #5b2f18;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.subir {
+    position: fixed;
+    right: 45px;
+    bottom: 90px;
+    background: white;
+    color: #d87917;
+    border: 2px solid #d87917;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 55px;
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: bold;
+    z-index: 30;
+}
+
 
 .seccion {
-    padding: 60px;
+    padding: 80px;
     text-align: center;
     min-height: 500px;
 }
@@ -113,21 +552,17 @@ button:hover, .boton:hover {
     padding: 30px;
     border-radius: 25px;
     box-shadow: 0 0 10px #c7b9a6;
+    transition: .4s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-12px);
 }
 
 .tarjeta img {
     width: 180px;
     height: 180px;
     object-fit: contain;
-}
-
-.tarjeta h2 {
-    color: #4b2b18;
-}
-
-.precio {
-    font-weight: bold;
-    color: #8b3f17;
 }
 
 .bloques {
@@ -185,13 +620,6 @@ textarea {
     font-weight: bold;
 }
 
-footer {
-    background: #3b2114;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
 .animar {
     opacity: 0;
     transform: translateY(35px);
@@ -203,122 +631,8 @@ footer {
     transform: translateY(0);
 }
 
-header {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    box-shadow: 0 5px 20px rgba(0,0,0,.25);
-}
-
-nav a {
-    transition: .4s;
-}
-
-nav a:hover {
-    color: #3b2114;
-    background: #d8a449;
-}
-
-.inicio {
-    min-height: 620px;
-    text-align: center;
-    padding: 90px 30px 40px;
-    background:
-        radial-gradient(circle at 15% 20%, rgba(216,164,73,.55), transparent 18%),
-        radial-gradient(circle at 85% 25%, rgba(255,255,255,.22), transparent 18%),
-        linear-gradient(rgba(45,22,12,.62), rgba(45,22,12,.80)),
-        linear-gradient(135deg, #7a3f1f, #2d160c 70%);
-    position: relative;
-    overflow: hidden;
-}
-
-.inicio:before {
-    content: "";
-    width: 300px;
-    height: 300px;
-    border: 35px solid rgba(255,255,255,.08);
-    border-radius: 50%;
-    position: absolute;
-    left: -80px;
-    bottom: -80px;
-    animation: girar 16s linear infinite;
-}
-
-.inicio:after {
-    content: "☕";
-    color: rgba(255,255,255,.16);
-    font-size: 170px;
-    position: absolute;
-    right: 80px;
-    bottom: 60px;
-    animation: flotar 3s ease-in-out infinite;
-}
-
-.caja {
-    transition: .4s;
-    animation: subir .9s ease;
-}
-
-.caja:hover {
-    transform: translateY(-12px) scale(1.04);
-    background: #d8a449;
-    color: #3b2114;
-}
-
-.tarjeta {
-    transition: .4s;
-    position: relative;
-    overflow: hidden;
-}
-
-.tarjeta:before {
-    content: "";
-    width: 90px;
-    height: 90px;
-    background: rgba(216,164,73,.22);
-    border-radius: 50%;
-    position: absolute;
-    top: -30px;
-    right: -30px;
-}
-
-.tarjeta:hover {
-    transform: translateY(-12px);
-    box-shadow: 0 16px 30px rgba(92,57,29,.30);
-}
-
-.tarjeta img {
-    animation: flotar 3s ease-in-out infinite;
-}
-
-button:hover, .boton:hover {
-    background: #d8a449;
-    color: #3b2114;
-    transform: translateY(-4px);
-}
-
-@keyframes aparecer {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-@keyframes subir {
-    from { opacity: 0; transform: translateY(45px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes bajar {
-    from { opacity: 0; transform: translateY(-35px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
 @keyframes flotar {
     0% { transform: translateY(0); }
     50% { transform: translateY(-12px); }
     100% { transform: translateY(0); }
-}
-
-@keyframes girar {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
 }
