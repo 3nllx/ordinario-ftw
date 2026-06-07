@@ -70,3 +70,24 @@ function mostrarSucursales(xml) {
 function enviarMensaje() {
     document.getElementById("mensaje").innerHTML = "Gracias por contactarnos. Pronto responderemos tu mensaje.";
 }
+
+function activarAnimaciones() {
+    var elementos = document.getElementsByClassName("animar");
+
+    for (var i = 0; i < elementos.length; i++) {
+        var posicion = elementos[i].getBoundingClientRect().top;
+        var alto = window.innerHeight;
+
+        if (posicion < alto - 80) {
+            elementos[i].classList.add("visible");
+        }
+    }
+}
+
+window.onload = function() {
+    activarAnimaciones();
+};
+
+window.onscroll = function() {
+    activarAnimaciones();
+};
