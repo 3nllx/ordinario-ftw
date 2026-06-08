@@ -26,7 +26,6 @@
 
 <nav class="menu-principal">
     <a href="cafeteria.html">Inicio</a>
-    <a href="museo.html">Nosotros</a>
     <a href="productos.html">Productos</a>
     <a href="sucursales.html">Cafeterías</a>
     <a href="lineas.html">Menú</a>
@@ -34,8 +33,16 @@
     <a href="museo.html" class="boton-menu">Museo</a>
 </nav>
 
-<section class="productos-sugeridos animar">
+<section class="productos-sugeridos">
     <h1>Productos Sugeridos</h1>
+
+    <div class="filtros-productos">
+        <button onclick="filtrarProductos('Todos')">Todos</button>
+        <button onclick="filtrarProductos('Tazas')">Tazas</button>
+        <button onclick="filtrarProductos('Termos')">Termos</button>
+        <button onclick="filtrarProductos('Café')">Café</button>
+        <button onclick="filtrarProductos('Edición Especial')">Edición Especial</button>
+    </div>
 
     <div id="listaProductos" class="grid-productos"></div>
 </section>
@@ -59,11 +66,11 @@
                 <img src="img/iconoTel.png" alt="Teléfono">
                 <a href="tel:2283753344">(228) 375 33 44</a>
             </p>
-            
+
             <p class="dato-footer">
                 <img src="img/iconoCorreo.png" alt="Correo">
                 <a href="mailto:contacto@boladeplata.com.mx">contacto@boladeplata.com.mx</a>
-</p>
+            </p>
         </div>
 
         <div>
