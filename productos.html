@@ -7,29 +7,77 @@
 </head>
 <body>
 
-<header>
-    <div class="logo">BOLA DE PLATA</div>
+<header class="encabezado-superior">
+    <div class="menu-icono">
+        <img src="img/iconoMenu.png" alt="Menú">
+    </div>
 
-    <nav>
-        <a href="cafeteria.html">Inicio</a>
-        <a href="productos.html">Productos</a>
-        <a href="museo.html">Museo</a>
-        <a href="lineas.html">Líneas</a>
-        <a href="sucursales.html">Sucursales</a>
-        <a href="contacto.html">Contacto</a>
-    </nav>
+    <div class="logo-centro">
+        <img src="img/logo.png" alt="Bola de Plata">
+    </div>
+
+    <div class="iconos">
+        <img src="img/iconoFace.png" alt="Facebook">
+        <img src="img/iconoInsta.png" alt="Instagram">
+        <img src="img/iconoUsuario.png" alt="Usuario">
+        <img src="img/iconoCarrito.png" alt="Carrito">
+    </div>
 </header>
 
-<section class="seccion">
-    <h1>Productos estrella</h1>
+<nav class="menu-principal">
+    <a href="cafeteria.html">Inicio</a>
+    <a href="museo.html">Nosotros</a>
+    <a href="productos.html">Productos</a>
+    <a href="sucursales.html">Cafeterías</a>
+    <a href="lineas.html">Menú</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="museo.html" class="boton-menu">Museo</a>
+</nav>
 
-    <button onclick="cargarProductos()">Mostrar productos</button>
+<section class="productos-sugeridos animar">
+    <h1>Productos Sugeridos</h1>
 
-    <div id="productos" class="tarjetas"></div>
+    <div id="listaProductos" class="grid-productos"></div>
 </section>
 
-<footer>
-    <p>Bola de plata - Calidad Xalapa</p>
+<footer class="footer-principal">
+    <div class="tela"></div>
+
+    <div class="footer-contenido">
+        <div>
+            <img src="img/logo.png" alt="Bola de Plata" class="logo-footer">
+            <p>Av. Manuel Ávila Camacho 120 Col. Centro Xalapa, Ver.</p>
+        </div>
+
+        <div>
+            <h3>Síguenos en:</h3>
+            <p class="redes-footer">
+                <img src="img/iconoFace.png" alt="Facebook">
+                <img src="img/iconoInsta.png" alt="Instagram">
+            </p>
+            <p class="dato-footer">
+                <img src="img/iconoTel.png" alt="Teléfono">
+                <a href="tel:2283753344">(228) 375 33 44</a>
+            </p>
+            
+            <p class="dato-footer">
+                <img src="img/iconoCorreo.png" alt="Correo">
+                <a href="mailto:contacto@boladeplata.com.mx">contacto@boladeplata.com.mx</a>
+</p>
+        </div>
+
+        <div>
+            <p>› Inicio</p>
+            <p>› Nosotros</p>
+            <p>› Productos</p>
+            <p>› Cafeterías</p>
+            <p>› Contacto</p>
+        </div>
+    </div>
+
+    <div class="derechos">
+        <p>© 2026 - Todos los Derechos Reservados por BOLA DE PLATA</p>
+    </div>
 </footer>
 
 <script src="javascript/funcionamiento.js"></script>

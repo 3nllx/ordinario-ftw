@@ -78,6 +78,46 @@ body {
     font-weight: bold;
 }
 
+.boton-menu {
+    position: relative;
+    overflow: hidden;
+    animation: respirar 2s infinite;
+}
+
+.boton-menu::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -80%;
+    width: 60%;
+    height: 200%;
+    background: rgba(255,255,255,.35);
+    transform: rotate(25deg);
+    transition: .6s;
+}
+
+.boton-menu:hover::before {
+    left: 130%;
+}
+
+.boton-menu:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 0 25px rgba(244,123,32,.8);
+}
+
+@keyframes respirar {
+    0% {
+        box-shadow: 0 0 0 rgba(244,123,32,.4);
+    }
+
+    50% {
+        box-shadow: 0 0 22px rgba(244,123,32,.8);
+    }
+
+    100% {
+        box-shadow: 0 0 0 rgba(244,123,32,.4);
+    }
+}
 .hero {
     height: 720px;
     background: url("../img/Fondo.png");
@@ -416,7 +456,11 @@ button:hover {
 }
 
 .lineas-inicio {
-    background: white;
+    background:
+        linear-gradient(rgba(255,255,255,.82), rgba(255,255,255,.82)),
+        url("../img/FondoFinal.png");
+    background-size: cover;
+    background-position: center bottom;
     padding: 120px 40px;
     text-align: center;
 }
@@ -491,6 +535,18 @@ button:hover {
     height: 110px;
     background: linear-gradient(45deg, #c79552, #e1b16d, #b47b3f);
 }
+.logo-footer {
+    width: 350px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.redes-footer img {
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+    object-fit: contain;
+}
 
 .footer-contenido {
     display: flex;
@@ -504,6 +560,26 @@ button:hover {
     font-size: 42px;
     margin: 0;
     color: #4b2b18;
+}
+.dato-footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dato-footer img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.dato-footer a {
+    color: #3b2114;
+    text-decoration: none;
+}
+
+.dato-footer a:hover {
+    color: #f47b20;
 }
 
 .footer-contenido h3 {
@@ -648,4 +724,62 @@ textarea {
     0% { transform: translateY(0); }
     50% { transform: translateY(-12px); }
     100% { transform: translateY(0); }
+}
+
+.productos-sugeridos {
+    padding: 80px 120px;
+    background: #f8f5ef;
+}
+
+.productos-sugeridos h1 {
+    color: #3b3b3b;
+    font-size: 34px;
+    margin-bottom: 50px;
+}
+
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 38px;
+    margin-bottom: 50px;
+}
+
+.producto-card {
+    background: white;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,.08);
+    transition: .4s;
+}
+
+.producto-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 15px 35px rgba(0,0,0,.15);
+}
+
+.producto-card img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    background: #eee;
+}
+
+.info-producto {
+    padding: 28px;
+    text-align: center;
+}
+
+.categoria {
+    color: #d45b12;
+    font-size: 16px;
+}
+
+.info-producto h2 {
+    color: black;
+    font-size: 24px;
+}
+
+.precio-producto {
+    color: #d45b12;
+    font-size: 22px;
 }

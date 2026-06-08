@@ -111,3 +111,45 @@ window.onload = function () {
 window.onscroll = function () {
     activarAnimaciones();
 };
+
+function cargarProductosSugeridos() {
+    var xhttp = new XMLHttpRequest();
+
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            mostrarProductosSugeridos(this);
+        }
+    };
+
+    xhttp.open("GET", "xml/productos.xml", true);
+    xhttp.send();
+}
+
+function mostrarProductosSugeridos(xml) {
+    var documento = xml.responseXML;
+    var productos = documento.getElementsByTagName("producto");
+    var salida = "";
+
+    for (var i = 0; i < productos.length; i++) {
+        var imagen = productos[i].getElementsByTagName("imagen")[0].textContent;
+        var categoria = productos[i].getElementsByTagName("categoria")[0].textContent;
+        var nombre = productos[i].getElementsByTagName("nombre")[0].textContent;
+        var precio = productos[i].getElementsByTagName("precio")[0].textContent;
+
+        salida += "<div class='producto-card'>";
+        salida += "<img src='" + imagen + "'>";
+        salida += "<div class='info-producto'>";
+        salida += "<p class='categoria'>" + categoria + "</p>";
+        salida += "<h2>" + nombre + "</h2>";
+        salida += "<p class='precio-producto'>" + precio + "</p>";
+        salida += "</div>";
+        salida += "</div>";
+    }
+
+    document.getElementById("listaProductos").innerHTML = salida;
+}
+
+window.onload = function() {
+    activarAnimaciones();
+    cargarProductosSugeridos();
+};

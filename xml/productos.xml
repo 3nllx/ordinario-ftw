@@ -1,23 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <productos>
     <producto>
-        <nombre>Cosecha Especial 2025</nombre>
-        <precio>$230</precio>
-        <descripcion>Café conmemorativo con acidez luminosa y notas cítricas.</descripcion>
-        <imagen>img/producto1.png</imagen>
+        <imagen>img/productoAzucar.png</imagen>
+        <categoria>Café</categoria>
+        <nombre>Gourmet Vainilla</nombre>
+        <precio>$85.00</precio>
     </producto>
 
     <producto>
-        <nombre>Mezcla Ganadora</nombre>
-        <precio>$230</precio>
-        <descripcion>Granos 100% arábica con cuerpo, intensidad y notas dulces.</descripcion>
-        <imagen>img/producto2.png</imagen>
+        <imagen>img/productoCosecha.png</imagen>
+        <categoria>Café</categoria>
+        <nombre>Cosecha Especial</nombre>
+        <precio>$130.00</precio>
     </producto>
 
     <producto>
+        <imagen>img/productoGourmet.png</imagen>
+        <categoria>Café</categoria>
         <nombre>Gourmet</nombre>
-        <precio>$97</precio>
-        <descripcion>Café seleccionado de altura con aroma intenso y equilibrado.</descripcion>
-        <imagen>img/producto3.png</imagen>
+        <precio>$90.00</precio>
+    </producto>
+
+    <producto>
+        <imagen>img/productoMolido.png</imagen>
+        <categoria>Café</categoria>
+        <nombre>Molido Tradicional</nombre>
+        <precio>$98.00</precio>
+    </producto>
+    <producto>
+        <imagen>img/productoMezclaGanadora.png</imagen>
+        <categoria>Café</categoria>
+        <nombre>Mezcla ganadora</nombre>
+        <precio>$260.00</precio>
+    </producto>
+
+    <producto>
+        <imagen>img/productoDescafeinado.png</imagen>
+        <categoria>Café</categoria>
+        <nombre>Descafeinado</nombre>
+        <precio>$110.00</precio>
+    </producto>
+
+    <producto>
+        <imagen>img/termo1.png</imagen>
+        <categoria>Termos</categoria>
+        <nombre>Termo Verde</nombre>
+        <precio>$150.00</precio>
+    </producto>
+
+    <producto>
+        <imagen>img/termo2.png</imagen>
+        <categoria>Termos</categoria>
+        <nombre>Termo Naranja</nombre>
+        <precio>$150.00</precio>
+    </producto>
+
+    <producto>
+        <imagen>img/taza1.png</imagen>
+        <categoria>Tazas</categoria>
+        <nombre>Taza Vintage</nombre>
+        <precio>$173.00</precio>
+    </producto>
+
+    <producto>
+        <imagen>img/taza2.png</imagen>
+        <categoria>Tazas</categoria>
+        <nombre>Taza Tahiti</nombre>
+        <precio>$130.00</precio>
+    </producto>
+
+    <producto>
+        <imagen>img/taza3.png</imagen>
+        <categoria>Tazas</categoria>
+        <nombre>Taza Mate</nombre>
+        <precio>$165.00</precio>
+    </producto>
+
+    <producto>
+        <imagen>img/bolsaDies.png</imagen>
+        <categoria>Edición Especial</categoria>
+        <nombre>Edicion 10 aniversario</nombre>
+        <precio>$230.00</precio>
     </producto>
 </productos>
