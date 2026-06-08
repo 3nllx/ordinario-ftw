@@ -1,0 +1,8 @@
+<!ELEMENT productos (producto+)>
+
+<!ELEMENT producto (imagen, categoria, nombre, precio)>
+
+<!ELEMENT imagen (#PCDATA)>
+<!ELEMENT categoria (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>

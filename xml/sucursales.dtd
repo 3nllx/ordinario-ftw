@@ -1,0 +1,9 @@
+<!ELEMENT sucursales (sucursal+)>
+
+<!ELEMENT sucursal (imagen, nombre, descripcion, horario, direccion)>
+
+<!ELEMENT imagen (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT horario (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>
