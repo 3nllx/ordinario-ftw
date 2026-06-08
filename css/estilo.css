@@ -131,6 +131,17 @@ body {
     height: 38px;
     object-fit: contain;
 }
+.iconos a {
+    text-decoration: none;
+}
+
+.iconos img {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+    margin-left: 18px;
+    cursor: pointer;
+}
 
 .capa-oscura {
     position: absolute;
@@ -187,6 +198,18 @@ body {
     color: #d8a449;
     font-size: 35px;
 }
+.redes-footer a {
+    text-decoration: none;
+}
+
+.footer a {
+    color: #3b2114;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #f47b20;
+}
 
 .tarjeta-hero h3 {
     margin: 0;
@@ -225,7 +248,15 @@ body {
     border-radius: 60px 60px 0 0;
     z-index: 1;
 }
-
+#buscadorSucursales {
+    display: block;
+    width: 420px;
+    margin: 0 auto 45px;
+    padding: 15px;
+    border: 1px solid #c7b9a6;
+    border-radius: 12px;
+    font-size: 16px;
+}   
 
 
 .sello {
@@ -956,4 +987,78 @@ textarea {
 .info-sucursal p {
     color: #3b2114;
     line-height: 1.5;
+}
+.contacto-pagina {
+    background:
+        linear-gradient(rgba(255,255,255,.88), rgba(255,255,255,.88)),
+        url("../img/FondoFinal.png");
+    background-size: cover;
+    background-position: center;
+    min-height: 650px;
+    padding: 90px 40px;
+}
+
+.formulario-contacto {
+    width: 700px;
+    margin: auto;
+    text-align: center;
+}
+
+.formulario-contacto h1 {
+    color: #8b3f17;
+    font-size: 34px;
+}
+
+.formulario-contacto p {
+    color: #777;
+    font-weight: bold;
+}
+
+.formulario-contacto form {
+    width: 100%;
+    margin-top: 25px;
+    text-align: left;
+}
+
+.formulario-contacto label {
+    color: #8b3f17;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 25px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.formulario-contacto textarea {
+    height: 90px;
+    resize: none;
+}
+
+.formulario-contacto button {
+    display: block;
+    margin: 10px auto;
+    background: #8b3f17;
+    color: white;
+    border: none;
+    padding: 15px 55px;
+    border-radius: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.formulario-contacto button:hover {
+    background: #f47b20;
+}
+
+#mensaje {
+    color: #8b3f17;
+    font-weight: bold;
+    margin-top: 20px;
 }

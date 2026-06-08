@@ -189,32 +189,26 @@ function cargarSucursalesCards() {
     xhttp.open("GET", "xml/sucursales.xml", true);
     xhttp.send();
 }
-
+var listaSucursales = [];
 function mostrarSucursalesCards(xml) {
     var documento = xml.responseXML;
     var sucursales = documento.getElementsByTagName("sucursal");
-    var salida = "";
+
+    listaSucursales = [];
 
     for (var i = 0; i < sucursales.length; i++) {
-        var imagen = sucursales[i].getElementsByTagName("imagen")[0].textContent;
-        var nombre = sucursales[i].getElementsByTagName("nombre")[0].textContent;
-        var descripcion = sucursales[i].getElementsByTagName("descripcion")[0].textContent;
-        var horario = sucursales[i].getElementsByTagName("horario")[0].textContent;
-        var direccion = sucursales[i].getElementsByTagName("direccion")[0].textContent;
+        var sucursal = {
+            imagen: sucursales[i].getElementsByTagName("imagen")[0].textContent,
+            nombre: sucursales[i].getElementsByTagName("nombre")[0].textContent,
+            descripcion: sucursales[i].getElementsByTagName("descripcion")[0].textContent,
+            horario: sucursales[i].getElementsByTagName("horario")[0].textContent,
+            direccion: sucursales[i].getElementsByTagName("direccion")[0].textContent
+        };
 
-        salida += "<div class='sucursal-card animar'>";
-        salida += "<img src='" + imagen + "'>";
-        salida += "<div class='info-sucursal'>";
-        salida += "<h2>" + nombre + "</h2>";
-        salida += "<p>" + descripcion + "</p>";
-        salida += "<p><b>Horario:</b> " + horario + "</p>";
-        salida += "<p><b>Dirección:</b> " + direccion + "</p>";
-        salida += "</div>";
-        salida += "</div>";
+        listaSucursales.push(sucursal);
     }
 
-    document.getElementById("listaSucursales").innerHTML = salida;
-    activarAnimaciones();
+    mostrarListaSucursales(listaSucursales);
 }
 
 window.onload = function () {
@@ -224,4 +218,38 @@ window.onload = function () {
         cargarSucursalesCards();
     }
 };
+var listaSucursales = [];
 
+function mostrarListaSucursales(sucursales) {
+    var salida = "";
+
+    for (var i = 0; i < sucursales.length; i++) {
+        salida += "<div class='sucursal-card animar'>";
+        salida += "<img src='" + sucursales[i].imagen + "'>";
+        salida += "<div class='info-sucursal'>";
+        salida += "<h2>" + sucursales[i].nombre + "</h2>";
+        salida += "<p>" + sucursales[i].descripcion + "</p>";
+        salida += "<p><b>Horario:</b> " + sucursales[i].horario + "</p>";
+        salida += "<p><b>Dirección:</b> " + sucursales[i].direccion + "</p>";
+        salida += "</div>";
+        salida += "</div>";
+    }
+
+    document.getElementById("listaSucursales").innerHTML = salida;
+    activarAnimaciones();
+}
+function buscarSucursales() {
+    var texto = document.getElementById("buscadorSucursales").value.toLowerCase();
+    var filtradas = [];
+
+    for (var i = 0; i < listaSucursales.length; i++) {
+        if (
+            listaSucursales[i].nombre.toLowerCase().indexOf(texto) >= 0 ||
+            listaSucursales[i].direccion.toLowerCase().indexOf(texto) >= 0
+        ) {
+            filtradas.push(listaSucursales[i]);
+        }
+    }
+
+    mostrarListaSucursales(filtradas);
+}

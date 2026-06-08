@@ -17,10 +17,21 @@
     </div>
 
     <div class="iconos">
-        <img src="img/iconoFace.png" alt="Facebook">
-        <img src="img/iconoInsta.png" alt="Instagram">
-        <img src="img/iconoUsuario.png" alt="Usuario">
-        <img src="img/iconoCarrito.png" alt="Carrito">
+        <a href="https://www.facebook.com/" target="_blank">
+            <img src="img/iconoFace.png" alt="Facebook">
+        </a>
+        
+        <a href="https://www.instagram.com/" target="_blank">
+            <img src="img/iconoInsta.png" alt="Instagram">
+        </a>
+        
+        <a href="contacto.html">
+            <img src="img/iconoUsuario.png" alt="Usuario">
+        </a>
+        
+        <a href="sucursales.html">
+            <img src="img/iconoCarrito.png" alt="Carrito">
+        </a>
     </div>
 </header>
 
@@ -33,17 +44,30 @@
     <a href="museo.html" class="boton-menu">Museo</a>
 </nav>
 
-<section class="seccion contacto">
-    <h1>Contacto</h1>
+<section class="contacto-pagina">
+    <div class="formulario-contacto">
+        <h1>Contacto</h1>
 
-    <form>
-        <input type="text" placeholder="Nombre">
-        <input type="email" placeholder="Correo">
-        <textarea placeholder="Mensaje"></textarea>
-        <button type="button" onclick="enviarMensaje()">Enviar</button>
-    </form>
+        <p>
+            Compártenos tus comentarios y dudas y uno de
+            nuestros expertos se comunicará contigo.
+        </p>
 
-    <p id="mensaje"></p>
+        <form onsubmit="enviarMensaje(); return false;">
+            <label>Nombre</label>
+            <input type="text" required>
+
+            <label>E-Mail</label>
+            <input type="email" required>
+
+            <label>Mensaje</label>
+            <textarea required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <p id="mensaje"></p>
+    </div>
 </section>
 
 <footer class="footer-principal">
@@ -58,8 +82,13 @@
         <div>
             <h3>Síguenos en:</h3>
             <p class="redes-footer">
-                <img src="img/iconoFace.png" alt="Facebook">
-                <img src="img/iconoInsta.png" alt="Instagram">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="img/iconoFace.png" alt="Facebook">
+                </a>
+                
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="img/iconoInsta.png" alt="Instagram">
+                </a>
             </p>
             <p class="dato-footer">
                 <img src="img/iconoTel.png" alt="Teléfono">
@@ -73,11 +102,15 @@
         </div>
 
         <div>
-            <p>› Inicio</p>
-            <p>› Nosotros</p>
-            <p>› Productos</p>
-            <p>› Cafeterías</p>
-            <p>› Contacto</p>
+            <a href="cafeteria.html">› Inicio</a>
+            <p></p>
+            <a href="productos.html">› Productos</a>
+            <p></p>
+            <a href="sucursales.html">› Cafeterías</a>
+            <p></p>
+            <a href="lineas.html">› Menú</a>
+            <p></p>
+            <a href="contacto.html">› Contacto</a>
         </div>
     </div>
 
