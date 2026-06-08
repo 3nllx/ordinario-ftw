@@ -177,9 +177,51 @@ function filtrarProductos(categoria) {
         mostrarListaProductos(filtrados);
     }
 }
+function cargarSucursalesCards() {
+    var xhttp = new XMLHttpRequest();
 
-window.onload = function() {
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            mostrarSucursalesCards(this);
+        }
+    };
+
+    xhttp.open("GET", "xml/sucursales.xml", true);
+    xhttp.send();
+}
+
+function mostrarSucursalesCards(xml) {
+    var documento = xml.responseXML;
+    var sucursales = documento.getElementsByTagName("sucursal");
+    var salida = "";
+
+    for (var i = 0; i < sucursales.length; i++) {
+        var imagen = sucursales[i].getElementsByTagName("imagen")[0].textContent;
+        var nombre = sucursales[i].getElementsByTagName("nombre")[0].textContent;
+        var descripcion = sucursales[i].getElementsByTagName("descripcion")[0].textContent;
+        var horario = sucursales[i].getElementsByTagName("horario")[0].textContent;
+        var direccion = sucursales[i].getElementsByTagName("direccion")[0].textContent;
+
+        salida += "<div class='sucursal-card animar'>";
+        salida += "<img src='" + imagen + "'>";
+        salida += "<div class='info-sucursal'>";
+        salida += "<h2>" + nombre + "</h2>";
+        salida += "<p>" + descripcion + "</p>";
+        salida += "<p><b>Horario:</b> " + horario + "</p>";
+        salida += "<p><b>Dirección:</b> " + direccion + "</p>";
+        salida += "</div>";
+        salida += "</div>";
+    }
+
+    document.getElementById("listaSucursales").innerHTML = salida;
+    activarAnimaciones();
+}
+
+window.onload = function () {
     activarAnimaciones();
     cargarProductosSugeridos();
+    if (document.getElementById("listaSucursales")) {
+        cargarSucursalesCards();
+    }
 };
 

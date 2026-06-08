@@ -1,20 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sucursales>
     <sucursal>
+        <imagen>img/sucursal1.png</imagen>
         <nombre>Sucursal Centro</nombre>
-        <direccion>Av. Principal #120, Centro</direccion>
+        <descripcion>Cafetería céntrica con ambiente familiar, bebidas calientes, frías y productos para llevar.</descripcion>
         <horario>Lunes a sábado de 8:00 a 20:00</horario>
+        <direccion>Av. Manuel Ávila Camacho 120, Centro, Xalapa, Ver.</direccion>
     </sucursal>
 
     <sucursal>
+        <imagen>img/sucursal2.png</imagen>
         <nombre>Sucursal Museo</nombre>
-        <direccion>Calle del Café #45</direccion>
+        <descripcion>Espacio inspirado en la historia del café y la tradición de Bola de Plata.</descripcion>
         <horario>Martes a domingo de 9:00 a 18:00</horario>
+        <direccion>Calle del Café #45, Xalapa, Ver.</direccion>
     </sucursal>
 
     <sucursal>
+        <imagen>img/sucursal3.png</imagen>
         <nombre>Sucursal Plaza</nombre>
-        <direccion>Plaza Comercial Local 8</direccion>
+        <descripcion>Cafetería moderna para compras rápidas, reuniones y café para llevar.</descripcion>
         <horario>Lunes a domingo de 10:00 a 21:00</horario>
+        <direccion>Plaza Comercial Local 8, Xalapa, Ver.</direccion>
+    </sucursal>
+
+    <sucursal>
+        <imagen>img/sucursal4.png</imagen>
+        <nombre>Sucursal Terraza</nombre>
+        <descripcion>Ambiente amplio y cómodo para disfrutar bebidas, postres y café de especialidad.</descripcion>
+        <horario>Lunes a domingo de 8:00 a 22:00</horario>
+        <direccion>Av. Principal #220, Xalapa, Ver.</direccion>
+    </sucursal>
+
+    <sucursal>
+        <imagen>img/sucursal5.png</imagen>
+        <nombre>Sucursal Universidad</nombre>
+        <descripcion>Ideal para estudiantes, tareas, reuniones pequeñas y bebidas frías.</descripcion>
+        <horario>Lunes a viernes de 7:30 a 19:30</horario>
+        <direccion>Zona Universitaria, Xalapa, Ver.</direccion>
+    </sucursal>
+
+    <sucursal>
+        <imagen>img/sucursal6.png</imagen>
+        <nombre>Sucursal Las Ánimas</nombre>
+        <descripcion>Sucursal con estilo moderno, perfecta para convivir y disfrutar café premium.</descripcion>
+        <horario>Lunes a domingo de 9:00 a 21:00</horario>
+        <direccion>Las Ánimas, Xalapa, Ver.</direccion>
     </sucursal>
 </sucursales>
